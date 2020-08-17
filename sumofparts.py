@@ -1,9 +1,9 @@
-def parts_sums(ls,fl=[]):
-    
-    if len(ls)>0:
+def parts_sums(ls, fl=[]):
+
+    if len(ls) > 0:
         fl.append(sum(ls))
         ls.pop(0)
-        return parts_sums(ls,fl)
+        return parts_sums(ls, fl)
     else:
         fl.append(0)
     return fl
