@@ -1,7 +1,10 @@
-def check_alive(health):
-    if(health < 0):
-        return False
+def arr(n=0):
+    l=[]
+    if n == 0 or n==None or n=='':
+        return []
     else:
-        return True
+        for i in range(n+1):
+            l.append(i)
+    return l
 
-print(check_alive(12))
+print(arr())
