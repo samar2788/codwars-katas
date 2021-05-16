@@ -1,0 +1,366 @@
+def is_age_diverse(lst):
+    d={}
+    if len(lst) < 10:
+        return False
+    else:
+        for i in lst:
+            if i['age'] in range(10,20):
+                d['teens']=1
+            elif i['age'] in range(20, 30):
+                d['twenties']=1
+            elif i['age'] in range(30, 40):
+                d['thirties'] = 1
+            elif i['age'] in range(40, 50):
+                d['forties'] = 1
+            elif i['age'] in range(50, 60):
+                d['fifties'] = 1
+            elif i['age'] in range(60, 70):
+                d['sixties'] = 1
+            elif i['age'] in range(70, 80):
+                d['seventies'] = 1
+            elif i['age'] in range(80, 90):
+                d['eighties'] = 1
+            elif i['age'] in range(90, 100):
+                d['nineties'] = 1
+            elif i['age'] in range(100, 200):
+                d['centenarian'] = 1
+    # print(d)
+    k = ['teens', 'twenties', 'thirties', 'forties',
+         'fifties', 'sixties', 'seventies', 'eighties', 'nineties', 'centenarian']
+    if all(name in d.keys() for name in k):
+        return True
+    else:
+        return False
+
+
+list1 = [{
+	'firstName': 'F',
+	'lastName': 'G',
+	'country': 'Fiigdcfjm',
+	'continent': 'Americas',
+	'age': 71,
+	'language': 'Javascript'
+}, {
+	'firstName': 'Jd',
+	'lastName': 'Kmmzqzni',
+	'country': 'Fqtlst',
+	'continent': 'Europe',
+	'age': 107,
+	'language': 'PHP'
+}, {
+	'firstName': 'Kvucfbx',
+	'lastName': 'Ev',
+	'country': 'Kfjojaap',
+	'continent': 'Asia',
+	'age': 30,
+	'language': 'Python'
+}, {
+	'firstName': 'Ltnfpepcfu',
+	'lastName': 'Mrrnh',
+	'country': 'Hnghpvfeij',
+	'continent': 'Europe',
+	'age': 64,
+	'language': 'Javascript'
+}, {
+	'firstName': 'Ncfoulmqz',
+	'lastName': 'Jnsxfhmd',
+	'country': 'Bn',
+	'continent': 'Americas',
+	'age': 93,
+	'language': 'Python'
+}, {
+	'firstName': 'Inbabbjxux',
+	'lastName': 'Lghqwmqb',
+	'country': 'Buogdmg',
+	'continent': 'Asia',
+	'age': 46,
+	'language': 'PHP'
+}, {
+	'firstName': 'Qokps',
+	'lastName': 'Oqihqctfry',
+	'country': 'Lbkkr',
+	'continent': 'Americas',
+	'age': 38,
+	'language': 'PHP'
+}, {
+	'firstName': 'Rncusdwqkf',
+	'lastName': 'Dsixzbr',
+	'country': 'Zd',
+	'continent': 'Asia',
+	'age': 120,
+	'language': 'Javascript'
+}, {
+	'firstName': 'Lxnomex',
+	'lastName': 'Ecbirdco',
+	'country': 'Wbtzkeee',
+	'continent': 'Oceania',
+	'age': 97,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Nkmuxq',
+	'lastName': 'S',
+	'country': 'Bntotyf',
+	'continent': 'Asia',
+	'age': 106,
+	'language': 'Python'
+}, {
+	'firstName': 'Vpue',
+	'lastName': 'Qvaoyqunpe',
+	'country': 'Rvt',
+	'continent': 'Oceania',
+	'age': 64,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Egqbyukrb',
+	'lastName': 'Dvlwokpmop',
+	'country': 'Vw',
+	'continent': 'Europe',
+	'age': 53,
+	'language': 'Python'
+}, {
+	'firstName': 'Kejrnka',
+	'lastName': 'Pzlkzy',
+	'country': 'Pfzebnjz',
+	'continent': 'Europe',
+	'age': 7,
+	'language': 'PHP'
+}, {
+	'firstName': 'Gcuyulmuym',
+	'lastName': 'Xlo',
+	'country': 'Xmxwmafpyh',
+	'continent': 'Asia',
+	'age': 116,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Bxpqtmr',
+	'lastName': 'Tztycvg',
+	'country': 'Jgpz',
+	'continent': 'Asia',
+	'age': 73,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Pt',
+	'lastName': 'Fxbdqrdc',
+	'country': 'Hfbvscglz',
+	'continent': 'Africa',
+	'age': 9,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Px',
+	'lastName': 'Trqwib',
+	'country': 'Regxrnhc',
+	'continent': 'Asia',
+	'age': 117,
+	'language': 'Javascript'
+}, {
+	'firstName': 'Zu',
+	'lastName': 'Ivn',
+	'country': 'Ciii',
+	'continent': 'Asia',
+	'age': 22,
+	'language': 'C'
+}, {
+	'firstName': 'Icdeocqxln',
+	'lastName': 'Cjmkfma',
+	'country': 'Iz',
+	'continent': 'Asia',
+	'age': 114,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Azm',
+	'lastName': 'Xp',
+	'country': 'Vwn',
+	'continent': 'Americas',
+	'age': 29,
+	'language': 'PHP'
+}, {
+	'firstName': 'Yjjxqbkztb',
+	'lastName': 'Cb',
+	'country': 'U',
+	'continent': 'Americas',
+	'age': 12,
+	'language': 'Python'
+}, {
+	'firstName': 'Denkbadnel',
+	'lastName': 'Xx',
+	'country': 'Bwfun',
+	'continent': 'Asia',
+	'age': 12,
+	'language': 'Python'
+}, {
+	'firstName': 'Tjeabjz',
+	'lastName': 'Rttonijqiw',
+	'country': 'Exzwwnnzx',
+	'continent': 'Africa',
+	'age': 75,
+	'language': 'Python'
+}, {
+	'firstName': 'Whg',
+	'lastName': 'Df',
+	'country': 'Zxiezycb',
+	'continent': 'Americas',
+	'age': 105,
+	'language': 'Javascript'
+}, {
+	'firstName': 'Gxlya',
+	'lastName': 'Uwysyhvf',
+	'country': 'Awx',
+	'continent': 'Africa',
+	'age': 27,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Tftumspo',
+	'lastName': 'Spknmn',
+	'country': 'Wczceucvrr',
+	'continent': 'Americas',
+	'age': 87,
+	'language': 'Java'
+}, {
+	'firstName': 'Ftj',
+	'lastName': 'Aen',
+	'country': 'Efoyzqzp',
+	'continent': 'Africa',
+	'age': 6,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Keug',
+	'lastName': 'Fsesqijdx',
+	'country': 'Rkxgwqnyhv',
+	'continent': 'Europe',
+	'age': 4,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Mcsjrahbq',
+	'lastName': 'Qlaz',
+	'country': 'Yptgb',
+	'continent': 'Africa',
+	'age': 30,
+	'language': 'C'
+}, {
+	'firstName': 'Qwks',
+	'lastName': 'Pq',
+	'country': 'Fpjcw',
+	'continent': 'Africa',
+	'age': 119,
+	'language': 'R'
+}, {
+	'firstName': 'P',
+	'lastName': 'Zh',
+	'country': 'Fcg',
+	'continent': 'Oceania',
+	'age': 103,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Icv',
+	'lastName': 'V',
+	'country': 'Fdhepwy',
+	'continent': 'Oceania',
+	'age': 71,
+	'language': 'R'
+}, {
+	'firstName': 'X',
+	'lastName': 'Gziwup',
+	'country': 'Yelbrvn',
+	'continent': 'Asia',
+	'age': 60,
+	'language': 'C'
+}, {
+	'firstName': 'Ll',
+	'lastName': 'Zxlb',
+	'country': 'Wznzc',
+	'continent': 'Europe',
+	'age': 88,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Waoo',
+	'lastName': 'Aidixgsfsv',
+	'country': 'Rxglvlp',
+	'continent': 'Asia',
+	'age': 27,
+	'language': 'PHP'
+}, {
+	'firstName': 'Totnbz',
+	'lastName': 'Udilbpb',
+	'country': 'Vi',
+	'continent': 'Oceania',
+	'age': 93,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Wgbpkeukhw',
+	'lastName': 'Bhzdmwnv',
+	'country': 'Mivv',
+	'continent': 'Asia',
+	'age': 89,
+	'language': 'Java'
+}, {
+	'firstName': 'Kxjkbinwi',
+	'lastName': 'N',
+	'country': 'Yiltoz',
+	'continent': 'Oceania',
+	'age': 39,
+	'language': 'R'
+}, {
+	'firstName': 'Rpp',
+	'lastName': 'Ekjgnzqxi',
+	'country': 'Pl',
+	'continent': 'Africa',
+	'age': 33,
+	'language': 'Python'
+}, {
+	'firstName': 'Rcrripstr',
+	'lastName': 'Hnrrefunj',
+	'country': 'Ikrzbs',
+	'continent': 'Americas',
+	'age': 53,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Gm',
+	'lastName': 'Dyk',
+	'country': 'Wj',
+	'continent': 'Americas',
+	'age': 85,
+	'language': 'Clojure'
+}, {
+	'firstName': 'Kyjsnhk',
+	'lastName': 'Liakdwe',
+	'country': 'Oacrxvcdwt',
+	'continent': 'Europe',
+	'age': 109,
+	'language': 'Javascript'
+}, {
+	'firstName': 'Ef',
+	'lastName': 'Spwdhoego',
+	'country': 'Reyiksuqy',
+	'continent': 'Oceania',
+	'age': 44,
+	'language': 'R'
+}, {
+	'firstName': 'Xq',
+	'lastName': 'Aow',
+	'country': 'Knoncp',
+	'continent': 'Americas',
+	'age': 29,
+	'language': 'Ruby'
+}, {
+	'firstName': 'Jbqpma',
+	'lastName': 'Qlq',
+	'country': 'Xx',
+	'continent': 'Americas',
+	'age': 33,
+	'language': 'PHP'
+}, {
+	'firstName': 'Fwcl',
+	'lastName': 'Offnobs',
+	'country': 'Giyjxrtn',
+	'continent': 'Oceania',
+	'age': 33,
+	'language': 'PHP'
+}, {
+	'firstName': 'Uxgstwaape',
+	'lastName': 'Gnxtjwaw',
+	'country': 'H',
+	'continent': 'Asia',
+	'age': 82,
+	'language': 'Clojure'
+}]
+print(is_age_diverse(list1))
