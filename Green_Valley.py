@@ -9,6 +9,3 @@ def make_valley(arr):
             right.append(sa[i])
     fl=left + sorted(right)
     return fl
-
-
-print(make_valley([17, 17, 15, 14, 8, 7, 7, 5, 4, 4, 1]))
