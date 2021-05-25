@@ -8,7 +8,3 @@ def even_last(numbers):
                 l.append(numbers[i])
     ls=sum(l)
     return ls*numbers[-1]
-
-
-print(even_last([2, 3, 4, 5]), 30)
-print(even_last([]), 0)
