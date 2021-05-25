@@ -12,6 +12,8 @@ def game(words):
         for i in range(lw-1):
             if words[i][-1]==words[i+1][0]:
                 c+=1
+            elif words[i][-1]!=words[i+1][0]:
+                return words[0:(c+1)]
         diff=lw-c
         if diff==1:
             c+=1
