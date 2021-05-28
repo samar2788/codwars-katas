@@ -6,8 +6,3 @@ def solution(string, ending):
         return True
     else:
         return False
-
-
-
-print(solution('abcde', 'cde'))
-print(solution('abcde', 'abc'))
