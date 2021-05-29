@@ -17,7 +17,3 @@ def str_to_hash(st):
     for i,j in zip(e,o):
         d[i]=int(j)
     return d
-
-
-print(str_to_hash("a=1, b=2, c=3, d=4"), { 'a': 1, 'b': 2, 'c': 3, 'd': 4})
-print(str_to_hash(""), {})
