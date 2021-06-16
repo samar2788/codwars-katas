@@ -8,6 +8,3 @@ def spin_words(sentence):
             d.append(l[i])
     res=' '.join(d)
     return res
-
-
-spin_words("Hey fellow warriors")
