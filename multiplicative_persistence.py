@@ -11,9 +11,3 @@ def persistence(n, c=0):
             return c
         else:
             return persistence(res, c)
-
-
-print(persistence(39), 3)
-print(persistence(4), 0)
-print(persistence(25), 2)
-print(persistence(999), 4)
