@@ -17,9 +17,3 @@ def duplicate_encode(word):
             l.append(d[i])
     fs = ''.join(l)
     return fs
-
-
-#print(duplicate_encode("din"), "(((")
-print(duplicate_encode("recede"), "()()()")
-# print(duplicate_encode("Success"),")())())","should ignore case")
-# print(duplicate_encode("(( @"),"))((")
